@@ -139,7 +139,7 @@ public class GroupChatActivity extends AppCompatActivity
     private void getUserInfo()
     {
 
-        userRef.child(currentGroupName).addValueEventListener(new ValueEventListener() {
+        userRef.child("Users").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
